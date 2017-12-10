@@ -1,0 +1,46 @@
+<TaskerData sr="" dvi="1" tv="5.0u7m">
+	<Task sr="task23">
+		<cdate>1508066156281</cdate>
+		<edate>1512939279064</edate>
+		<id>23</id>
+		<nme>Toggl - get time entry details</nme>
+		<pri>100</pri>
+		<Action sr="act0" ve="7">
+			<code>118</code>
+			<Str sr="arg0" ve="3">https://%TOGGL_TOKEN:api_token@www.toggl.com</Str>
+			<Str sr="arg1" ve="3">api/v8/time_entries/%toggl_time_entry_id</Str>
+			<Str sr="arg2" ve="3"/>
+			<Str sr="arg3" ve="3"/>
+			<Str sr="arg4" ve="3"/>
+			<Int sr="arg5" val="10"/>
+			<Str sr="arg6" ve="3"/>
+			<Str sr="arg7" ve="3"/>
+			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">if (global('HTTPR') == 200) {
+  var data = JSON.parse(global('HTTPD')).data;
+  if(data != undefined) {
+  if(data != undefined) {
+    var time_entry_id = data.id;
+    var time_entry_wid = data.wid;
+    var time_entry_pid = data.pid;
+    var time_entry_tid = data.tid;
+    var time_entry_billable = data.billable;
+    var time_entry_start = data.start;
+    var time_entry_stop = data.stop;
+    var time_entry_duration = data.duration;
+    var time_entry_description = data.description;
+    var time_entry_tags = data.tags;
+    var time_entry_at = data.at;
+  } else {
+    flash('Time entry undefined!')
+  } 
+}</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+	</Task>
+</TaskerData>
