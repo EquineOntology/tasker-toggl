@@ -3,7 +3,7 @@
 		<cdate>1508066156281</cdate>
 		<edate>1512930870242</edate>
 		<id>19</id>
-		<nme>Toggl - me (API token)</nme>
+		<nme>Toggl /me (API token)</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>118</code>
