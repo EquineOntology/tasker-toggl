@@ -1,9 +1,9 @@
 <TaskerData sr="" dvi="1" tv="5.0u7m">
-	<Task sr="task19">
+	<Task sr="task23">
 		<cdate>1508066156281</cdate>
-		<edate>1512930870242</edate>
-		<id>19</id>
-		<nme>Toggl /me (API token)</nme>
+		<edate>1512939279064</edate>
+		<id>23</id>
+		<nme>Toggl - user with API token</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>118</code>
@@ -16,6 +16,58 @@
 			<Str sr="arg6" ve="3"/>
 			<Str sr="arg7" ve="3"/>
 			<Int sr="arg8" val="0"/>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">if (global('HTTPR') == 200) {
+  var data = JSON.parse(global('HTTPD')).data;
+  if(data != undefined) {
+    var toggl_id = data.id;
+    var toggl_api_token = data.api_token;
+    var toggl_default_wid = data.default_wid;
+    var toggl_email = data.email;
+    var toggl_fullname = data.fullname;
+    var toggl_jquery_timeofday_format = data.jquery_timeofday_format;
+    var toggl_jquery_date_format = data.jquery_date_format;
+    var toggl_timeofday_format = data.timeofday_format;
+    var toggl_date_format = data.date_format;
+    var toggl_store_start_and_stop_time = data.store_start_and_stop_time;
+    var toggl_beginning_of_week = data.beginning_of_week;
+    var toggl_language = data.language;
+    var toggl_image_url = data.image_url;
+    var toggl_sidebar_piechart = data.sidebar_piechart;
+    var toggl_at = data.at;
+    var toggl_created_at = data.created_at;
+    var toggl_retention = data.retention;
+    var toggl_record_timeline = data.record_timeline;
+    var toggl_render_timeline = data.render_timeline;
+    var toggl_timeline_enabled = data.timeline_enabled;
+    var toggl_timeline_experiment = data.timeline_experiment;
+    var toggl_new_blog_post_title = data.new_blog_post.title;
+    var toggl_new_blog_post_url = data.new_blog_post.url;
+    var toggl_new_blog_post_category = data.new_blog_post.category;
+    var toggl_new_blog_post_pub_date = data.new_blog_post.pub_date;
+    var toggl_should_upgrade = data.should_upgrade;
+    var toggl_timezone = data.timezone;
+    var toggl_openid_enabled = data.openid_enabled;
+    var toggl_openid_email = data.openid_email;
+    var toggl_send_product_emails = data.send_product_emails;
+    var toggl_send_weekly_report = data.send_weekly_report;
+    var toggl_send_timer_notifications = data.send_timer_notifications;
+    var toggl_last_blog_entry = data.last_blog_entry;
+    var toggl_invitation = data.invitation;
+    var toggl_workspaces = data.workspaces;
+    var toggl_duration_format = data.duration_format;
+    var toggl_obm_included = data.obm.included;
+    var toggl_obm_nr = data.obm.nr;
+    var toggl_obm_actions = data.obm.actions;
+  } else {
+    flash('User undefined!')
+  } 
+}</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
 		</Action>
 	</Task>
 </TaskerData>
