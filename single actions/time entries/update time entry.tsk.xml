@@ -31,7 +31,7 @@
 					<bundle_param-type>java.lang.String</bundle_param-type>
 					<com.freehaha.restask.BASICAUTH>%TOGGL_TOKEN:api_token</com.freehaha.restask.BASICAUTH>
 					<com.freehaha.restask.BASICAUTH-type>java.lang.String</com.freehaha.restask.BASICAUTH-type>
-					<com.freehaha.restask.BODY>%time_entry_body</com.freehaha.restask.BODY>
+					<com.freehaha.restask.BODY>%request_body</com.freehaha.restask.BODY>
 					<com.freehaha.restask.BODY-type>java.lang.String</com.freehaha.restask.BODY-type>
 					<com.freehaha.restask.CERT></com.freehaha.restask.CERT>
 					<com.freehaha.restask.CERT-type>java.lang.String</com.freehaha.restask.CERT-type>
@@ -141,50 +141,50 @@ Response body&lt;/_array_net.dinglisch.android.tasker.RELEVANT_VARIABLES1&gt;&lt
 		</Action>
 		<Action sr="act9" ve="7">
 			<code>129</code>
-			<Str sr="arg0" ve="3">var time_entry_body = '{"time_entry":{';
+			<Str sr="arg0" ve="3">var request_body = '{"time_entry":{';
 var moreThanOne = false;
 
 if(time_entry_description != ' ') {
-	time_entry_body += moreThanOne ? ',' : '';
+	request_body += moreThanOne ? ',' : '';
 	moreThanOne = true;
-	time_entry_body += '"description": "' + time_entry_description + '"';
+	request_body += '"description": "' + time_entry_description + '"';
 }
 if(time_entry_tags != ' ') {
-	time_entry_body += moreThanOne ? ',' : '';
+	request_body += moreThanOne ? ',' : '';
 	moreThanOne = true;
-	time_entry_body += '"tags": "' + time_entry_tags + '"';
+	request_body += '"tags": "' + time_entry_tags + '"';
 }
 if(time_entry_duration != ' ') {
-	time_entry_body += moreThanOne ? ',' : '';
+	request_body += moreThanOne ? ',' : '';
 	moreThanOne = true;
-	time_entry_body += '"duration": ' + time_entry_duration;
+	request_body += '"duration": ' + time_entry_duration;
 }
 if(time_entry_start != ' ') {
-	time_entry_body += moreThanOne ? ',' : '';
+	request_body += moreThanOne ? ',' : '';
 	moreThanOne = true;
-	time_entry_body += '"start": "' + time_entry_start + '"';
+	request_body += '"start": "' + time_entry_start + '"';
 }
 if(time_entry_stop != ' ') {
-	time_entry_body += moreThanOne ? ',' : '';
+	request_body += moreThanOne ? ',' : '';
 	moreThanOne = true;
-	time_entry_body += '"stop": "' + time_entry_stop + '"';
+	request_body += '"stop": "' + time_entry_stop + '"';
 }
 if(time_entry_duronly != ' ') {
-	time_entry_body += moreThanOne ? ',' : '';
+	request_body += moreThanOne ? ',' : '';
 	moreThanOne = true;
-	time_entry_body += '"duronly": ' + time_entry_duronly;
+	request_body += '"duronly": ' + time_entry_duronly;
 }
 if(time_entry_pid != ' ') {
-	time_entry_body += moreThanOne ? ',' : '';
+	request_body += moreThanOne ? ',' : '';
 	moreThanOne = true;
-	time_entry_body += '"pid": ' + time_entry_pid;
+	request_body += '"pid": ' + time_entry_pid;
 }
 if(time_entry_billable != ' ') {
-	time_entry_body += moreThanOne ? ',' : '';
+	request_body += moreThanOne ? ',' : '';
 	moreThanOne = true;
-	time_entry_body += '"billable": ' + time_entry_billable;
+	request_body += '"billable": ' + time_entry_billable;
 }
-time_entry_body += '}}';</Str>
+request_body += '}}';</Str>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="1"/>
 			<Int sr="arg3" val="45"/>

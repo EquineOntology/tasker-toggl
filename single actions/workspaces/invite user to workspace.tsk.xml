@@ -38,7 +38,7 @@
 					<bundle_param-type>java.lang.String</bundle_param-type>
 					<com.freehaha.restask.BASICAUTH>%TOGGL_TOKEN:api_token</com.freehaha.restask.BASICAUTH>
 					<com.freehaha.restask.BASICAUTH-type>java.lang.String</com.freehaha.restask.BASICAUTH-type>
-					<com.freehaha.restask.BODY>%time_entry_body</com.freehaha.restask.BODY>
+					<com.freehaha.restask.BODY>%request_body</com.freehaha.restask.BODY>
 					<com.freehaha.restask.BODY-type>java.lang.String</com.freehaha.restask.BODY-type>
 					<com.freehaha.restask.CERT></com.freehaha.restask.CERT>
 					<com.freehaha.restask.CERT-type>java.lang.String</com.freehaha.restask.CERT-type>
