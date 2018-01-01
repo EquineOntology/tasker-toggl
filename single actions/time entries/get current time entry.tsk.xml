@@ -23,13 +23,19 @@
   var data = JSON.parse(global('HTTPD')).data;
   if(data != undefined) {
     var time_entry_id = data.id;
+    var time_entry_guid = data.guid;
     var time_entry_wid = data.wid;
-    var time_entry_pid = data.pid;
+    var time_entry_pid = data.pid || '';
+    var time_entry_tid = data.tid || '';
     var time_entry_billable = data.billable;
     var time_entry_start = data.start;
+    var time_entry_stop = data.stop || null;
     var time_entry_duration = data.duration;
-    var time_entry_description = data.description;
+    var time_entry_description = data.description || '';
+    var time_entry_tags = data.tags || [];
+    var time_entry_duronly = data.duronly;
     var time_entry_at = data.at;
+    var time_entry_uid = data.uid;
   } else {
     flash('Time entry undefined!')
   } 
