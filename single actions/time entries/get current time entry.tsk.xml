@@ -3,7 +3,7 @@
 		<cdate>1508066156281</cdate>
 		<edate>1512938406086</edate>
 		<id>23</id>
-		<nme>Toggl Curr</nme>
+		<nme>Toggl - get current entry</nme>
 		<pri>100</pri>
 		<Action sr="act0" ve="7">
 			<code>118</code>
