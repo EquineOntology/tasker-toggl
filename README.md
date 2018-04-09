@@ -14,7 +14,7 @@ To import tasks, tap at the Tasks tab. After selecting "Import", goto the folder
 That's it! You can now use the tasks you imported as you please.
 
 ## Contributing
-If you'd like to update an action or modify it sligthly, you can just [open an issue](https://github.com/HHErebus/tasker-toggl/issues/new) or submit a pull request. The only thing I ask is that you make it as friendly as possible for end-users.
+See the [contribution guidelines](https://github.com/HHErebus/tasker-toggl/blob/v8/CONTRIBUTING.md). As a rule of thumb you're welcome to contribute anything, just make it easy for end-users if you can.
 
 Cheers!
 
