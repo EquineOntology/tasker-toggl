@@ -5,4 +5,5 @@ If you'd like to update an action or modify it sligthly, you can just [open an i
 There is only one thing I take as a requirement, which is to make the change friendly to end-users where possible.
 
 Cheers!
- - Christian
+
+ \- Christian
