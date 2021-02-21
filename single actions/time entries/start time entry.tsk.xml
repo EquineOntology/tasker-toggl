@@ -126,7 +126,7 @@ request_body += '}}';</Str>
 					<com.freehaha.restask.SYNCCALL-type>java.lang.String</com.freehaha.restask.SYNCCALL-type>
 					<com.freehaha.restask.TIMEOUT>30</com.freehaha.restask.TIMEOUT>
 					<com.freehaha.restask.TIMEOUT-type>java.lang.String</com.freehaha.restask.TIMEOUT-type>
-					<com.freehaha.restask.TYPE>PUT</com.freehaha.restask.TYPE>
+					<com.freehaha.restask.TYPE>POST</com.freehaha.restask.TYPE>
 					<com.freehaha.restask.TYPE-type>java.lang.String</com.freehaha.restask.TYPE-type>
 					<com.twofortyfouram.locale.intent.extra.BLURB>REST call</com.twofortyfouram.locale.intent.extra.BLURB>
 					<com.twofortyfouram.locale.intent.extra.BLURB-type>java.lang.String</com.twofortyfouram.locale.intent.extra.BLURB-type>
